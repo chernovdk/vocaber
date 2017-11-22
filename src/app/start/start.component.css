@@ -1,0 +1,18 @@
+h1 {
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 100px;
+    margin: 15px 0 5px;
+    color: rgb(65, 141, 97);
+}
+
+h2 {
+    font-weight: 300;
+    margin: 100px 0 10px;
+}
+
+.btn {
+    margin-top: 30px;
+    padding: 15px 40px;
+}
+
