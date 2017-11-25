@@ -1,0 +1,34 @@
+.card {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.btn-group {
+    width: 100%;
+}
+
+.btn {
+    width: 50%;
+}
+
+.card-body {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    height: 150px;
+    padding: 0;
+}
+
+.card-body-face h1 {
+    font-size: 3rem;
+}
+
+.card-body-back h1 {
+    font-size: 2rem;
+}
+
+.card-body-back {
+    background: #eee;
+}

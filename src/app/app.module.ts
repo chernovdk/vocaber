@@ -7,13 +7,15 @@ import { StartComponent } from './start/start.component';
 import { TestComponent } from './test/test.component';
 
 import { AppRoutingModule } from './/app-routing.module';
+import { CardComponent } from './card/card.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     StartComponent,
-    TestComponent
+    TestComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

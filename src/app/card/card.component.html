@@ -1,0 +1,14 @@
+<div class="card text-center border-info text-info">
+  <div (click)="onWordClick()" [ngClass]="{'card-body': true, 'card-body-face': facestate, 'card-body-back': !facestate}">
+    <h1 class="card-title">
+        {{word | uppercase}}
+    </h1> 
+  </div>
+  <div class="card-footer">
+      <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+        <button (click)="onCorrect()" class="btn btn-outline-info" [disabled]="buttonsDisabled">Yes</button>
+        <button (click)="onWrong()" class="btn btn-outline-info" [disabled]="buttonsDisabled">No</button>
+      </div>
+  </div>
+  
+</div>
