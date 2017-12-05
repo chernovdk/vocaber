@@ -1,14 +1,16 @@
-<div class="card text-center border-info text-info">
-  <div (click)="onWordClick()" [ngClass]="{'card-body': true, 'card-body-face': facestate, 'card-body-back': !facestate}">
-    <h1 class="card-title">
-        {{word | uppercase}}
-    </h1> 
+<div class="card-container">
+  <div class="card-box"  
+  [@flip]="flipState" 
+  (@flip.start)="flipStarted($event)"
+  (@flip.done)="flipDone($event)">
+    <div class="rounded-top card-side card-front"><h1>{{data.front | uppercase}}</h1></div>
+    <div class="rounded-top card-side card-back"><h1>{{data.back | uppercase}}</h1></div>
   </div>
-  <div class="card-footer">
-      <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-        <button (click)="onCorrect()" class="btn btn-outline-info" [disabled]="buttonsDisabled">Yes</button>
-        <button (click)="onWrong()" class="btn btn-outline-info" [disabled]="buttonsDisabled">No</button>
-      </div>
+  <div class="card-box fake-box"
+  *ngIf = "fakeVisible"  
+  [@fake]="fakeState" 
+  (@fake.start)="fakeStarted($event)"
+  (@fake.done)="fakeDone($event)">
+    <div class="rounded-top card-side card-front"><h1>{{dataNext.front | uppercase}}</h1></div>
   </div>
-  
 </div>

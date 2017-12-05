@@ -1,0 +1,11 @@
+<div class="card text-center border-info text-info">
+  <div class="card-header">{{wordnumber+1}}/{{words.length}}</div>
+  <app-card (click)="onWordClick()" #card></app-card>
+  <div class="card-footer">
+      <div class="btn-group btn-group-lg" role="group" aria-label="buttons">
+        <button (click)="onCorrect()" class="btn btn-outline-success" [disabled]="buttonsDisabled || card.fliping">Yes</button>
+        <button (click)="onWrong()" class="btn btn-outline-danger" [disabled]="buttonsDisabled || card.fliping">No</button>
+      </div>
+  </div>
+  
+</div>

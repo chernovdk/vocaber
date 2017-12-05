@@ -10,3 +10,8 @@ export const WORDS = [
     { word: "have", trans: "иметь" },
     { word: "right", trans: "правый" }
   ];
+
+export class CardData {
+  front:string;
+  back:string
+}

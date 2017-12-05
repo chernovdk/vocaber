@@ -1,0 +1,21 @@
+.card {
+    width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.btn-group {
+    width: 100%;
+}
+
+.btn {
+    width: 50%;
+}
+
+.card-footer {
+    padding: .75rem .5rem;
+}
+
+.btn-group-lg>.btn {
+    padding: 1rem 1rem;
+}

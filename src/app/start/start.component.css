@@ -1,9 +1,12 @@
+.container {
+    padding-top: 200px;
+}
+
 h1 {
     font-weight: 500;
-    font-size: 100px;
-    line-height: 100px;
+    font-size: 60px;
+    line-height: 70px;
     margin: 15px 0 5px;
-    color: rgb(65, 141, 97);
 }
 
 h2 {
